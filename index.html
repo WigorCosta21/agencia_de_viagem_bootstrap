@@ -38,14 +38,14 @@
   </header>
 
   <main>
-    <div id="banner-city" class="carousel slide" data-bs-ride="false">
+    <div id="banner-city" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#banner-city" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#banner-city" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#banner-city" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div data-bs-interval="3000" class="carousel-item active">
           <img src="./img/cancu.jpg" class="d-block w-100" alt="Cancún">
           <div class="carousel-caption d-block">
             <h4>R$ 1.900,00</h4>
@@ -53,7 +53,7 @@
             <a class="btn-read-more" href="">Saiba Mais</a>
           </div>
         </div>
-        <div class="carousel-item">
+        <div data-bs-interval="3000" class="carousel-item">
           <img src="./img/ny.jpg" class="d-block w-100" alt="Nova York">
           <div class="carousel-caption d-block">
             <h4>R$ 2.400,00</h4>
@@ -61,7 +61,7 @@
             <a class="btn-read-more" href="">Saiba Mais</a>
           </div>
         </div>
-        <div class="carousel-item">
+        <div data-bs-interval="3000" class="carousel-item">
           <img src="./img/jericoacora.jpg" class="d-block w-100" alt="Jericoacora">
           <div class="carousel-caption d-block">
             <h4>R$ 1.450,00</h4>
@@ -80,6 +80,8 @@
       </button>
     </div>
   </main>
+
+
   <section id="reservation">
     <div class="container">
       <div class="row">
