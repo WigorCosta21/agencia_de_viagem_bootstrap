@@ -26,39 +26,9 @@ i {
   text-align: end;
 }
 
-.form-info input {
-  border: 2px solid #da1a29;
-  border-radius: 15px;
-}
-
-.form-info input:focus {
-  box-shadow: none;
-  border-color: #da1a29;
-}
-
-.btn-reservation {
-  background-color: #da1a29;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  margin-top: 15%;
-  padding: 0.4rem;
-  color: #fff;
-  text-decoration: none;
-  border: 1px solid transparent;
-}
-
-.btn-reservation:hover {
-  color: #da1a29;
-  font-weight: bold;
-  background-color: transparent;
-  border-color: #da1a29;
-}
-
 .carousel-inner,
 .carousel-item {
-  height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
 }
 
 .carousel-caption {
@@ -94,6 +64,36 @@ i {
 }
 
 .btn-read-more:hover {
+  color: #da1a29;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: #da1a29;
+}
+
+.form-info input {
+  border: 2px solid #da1a29;
+  border-radius: 15px;
+}
+
+.form-info input:focus {
+  box-shadow: none;
+  border-color: #da1a29;
+}
+
+.btn-reservation {
+  background-color: #da1a29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 15%;
+  padding: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-reservation:hover {
   color: #da1a29;
   font-weight: bold;
   background-color: transparent;
@@ -201,7 +201,12 @@ footer {
   .footer-title {
     margin-bottom: 12px;
   }
+}
 
+@media (max-width: 450px) {
+  .carousel-caption {
+    top: 10vh;
+  }
 
 }
 
